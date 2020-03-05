@@ -6,6 +6,7 @@
  $xpanel=$_GET['do'];
   $username=$_GET['username'];
   $server= $_SERVER['SERVER_NAME'];
+    $username=get_current_user();
  
  
  define('__ROOT__', dirname(dirname(__FILE__)));
