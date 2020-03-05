@@ -1,0 +1,6 @@
+[09-Jan-2019 04:13:39 America/Chicago] PHP Parse error:  syntax error, unexpected 'curl_setopt' (T_STRING) in /home/midhubala1/public_html/Cpanel_API_deleteDB/cpaneluapi.class.php on line 243
+[09-Jan-2019 04:14:08 America/Chicago] PHP Parse error:  syntax error, unexpected 'curl_setopt' (T_STRING) in /home/midhubala1/public_html/Cpanel_API_deleteDB/cpaneluapi.class.php on line 243
+[09-Jan-2019 04:14:18 America/Chicago] PHP Parse error:  syntax error, unexpected 'curl_setopt' (T_STRING) in /home/midhubala1/public_html/Cpanel_API_deleteDB/cpaneluapi.class.php on line 243
+[09-Jan-2019 04:14:36 America/Chicago] PHP Parse error:  syntax error, unexpected 'curl_setopt' (T_STRING) in /home/midhubala1/public_html/Cpanel_API_deleteDB/cpaneluapi.class.php on line 243
+[28-Feb-2019 01:54:40 America/Chicago] PHP Warning:  require_once(/home/midhubala1/public_html/Cpanel_API/cpaneluapi.class.php): failed to open stream: No such file or directory in /home/midhubala1/public_html/Cpanel_API_deleteDB/midd.php on line 5
+[28-Feb-2019 01:54:40 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '/home/midhubala1/public_html/Cpanel_API/cpaneluapi.class.php' (include_path='.:/opt/php71/lib/php') in /home/midhubala1/public_html/Cpanel_API_deleteDB/midd.php on line 5
