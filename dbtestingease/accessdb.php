@@ -32,7 +32,7 @@
              echo "Dev update added successfully";
           }
         }
-        if($dbshoworopen==open){
+        if($dbshoworopen=='open'){
            
          
            if(empty($username))
@@ -55,7 +55,7 @@
 
            }
          }
-         else if($dbshoworopen==show) {
+         else if($dbshoworopen=='show') {
 
     echo '<br> dbname ='.$config['SQL_DATABASE'].'<br>username ='.$config['SQL_USERNAME'].'<br> password ='.$config['SQL_PASSWORD'].'<br> prefix ='.$config['SQL_TABLE_NAME_PREFIX'];
 
