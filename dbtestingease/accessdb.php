@@ -15,7 +15,7 @@
     if(file_exists($file))
       {
           require_once($file); 
-     if($xpanel=='xpanel'){
+     if($xpanel=='x'){
           if(defined('DEV_UPDATE'))
            {
             echo "DEV update already there";
@@ -27,12 +27,12 @@
              echo "Dev update added successfully";
            }
         }
-             if($dbshoworopen==open){
+             if($dbshoworopen=='o'){
            
-                 $url='http://'.$server.'/db/adminer.php?username='.$username.'&db='.$config['SQL_DATABASE'].'&pass='.$config['SQL_PASSWORD'] ;
+                 $url='http://'.$server.'/db/adminer.php?username='.$config['SQL_USERNAME'].'&db='.$config['SQL_DATABASE'].'&pass='.$config['SQL_PASSWORD'] ;
                  header("Location: ".$url);
                }
-                   else if($dbshoworopen==show) {
+                   else if($dbshoworopen=='s') {
 
                       echo '<br> dbname ='.$config['SQL_DATABASE'].'<br>username ='.$config['SQL_USERNAME'].'<br> password ='.$config['SQL_PASSWORD'].'<br> prefix ='.$config['SQL_TABLE_NAME_PREFIX'];
 
@@ -54,17 +54,17 @@
           $DB_USERNAME=$takeDB['DB_USER'];
           $DB_PASS=$takeDB['DB_PASSWORD'];
           $DB_PREFIX=$takeDB['$table_prefix'];
-      if( $dbshoworopen =='show')
+      if( $dbshoworopen =='s')
           {
         
          echo '<br> dbname ='.$DB_NAME.'<br> username ='.$DB_USERNAME.'<br> pass ='.$DB_PASS.'<br> prefix ='.$DB_PREFIX;
             }
          
-          else if($dbshoworopen=='open')
+          else if($dbshoworopen=='o')
          
           {
        
-              $url='http://'.$server.'/db/adminer.php?username='.$username.'&db='.$DB_NAME.'&pass='.$DB_PASS ;
+              $url='http://'.$server.'/db/adminer.php?username='.$DB_USERNAME.'&db='.$DB_NAME.'&pass='.$DB_PASS ;
 
                header("Location: ".$url);
            
